@@ -1,0 +1,74 @@
+.Blog{
+    padding: 1rem;
+}
+.Blog__cards{
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem; 
+}
+
+.Blog__head {
+    width: 100%;
+    text-align: center;
+}
+
+.Blog__head> img{
+    width: 30%;
+    margin: 0 auto;
+}
+.Blog__card{
+    padding: 2rem 1rem;
+    background: var(--bg-linear);
+    border-radius: 10px;
+    color: var(--clr-accent-white);
+    text-align: center;
+}
+.Blog__card>img{
+    width: 100%;
+}
+.slick-slide > div {
+    margin: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }
+.Blog__card a{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background:  rgba(255, 255, 255, 0.25);
+    color:var(--clr-accent-white);
+    border: none;
+    margin-top: 2rem;
+}
+
+.Blog__card a:hover{
+    background-color: rgba(255, 255, 255, 0.75) ;
+    color: var(--clr-accent-black);
+}
+
+.Blog__card>*{
+    margin-bottom: 1rem;
+}
+@media screen and (max-width:45rem) {
+    .Blog__head>img{
+        width: 100%;
+    }
+    .Blog__cards{
+        padding:0;
+    }
+    .Blog__card{
+        padding: 0.5rem 0.5rem 2rem 0.5rem;
+    }
+    .slick-slide{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 680px) and (max-width:1144px){
+    .Blog__cards{
+        padding:1rem;
+    }
+    .Blog__card{
+        padding: 0.5rem 0.5rem 2rem 0.5rem;
+    }
+}

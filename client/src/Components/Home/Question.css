@@ -1,0 +1,53 @@
+
+.Question {
+    width: 80%;
+    margin: 3rem auto;
+}
+.Question img{
+    max-width: 25rem;
+}
+.Question details{
+    padding: 0.5rem;
+}
+.Question__summary{
+    margin-top: 0.5rem;
+}
+
+.Question summary::before{
+    display: none;
+}
+.Question__titles{
+    color: var(--clr-accent-black);
+    font-size: 2rem;
+}
+.Question details > summary {
+    list-style: none;
+  }
+  
+.Question  details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
+.Question details > summary::-webkit-details-marker /* Safari */ {
+    display: none;
+  }
+.Question__flex{
+    display: flex;
+    justify-content: space-between;
+}
+.Question details>summary::after{
+    content: url("../../Images/Home/dropdownarrow.png");
+    margin-left: 1rem;
+}
+
+@media screen and (max-width:45rem) {
+    .Question{
+        width: 98%;
+    }
+    .Question__flex{
+        flex-direction: column;
+    }
+    .Question details{
+        font-size: 1rem;
+    }
+    .Question img{
+        display: none;
+    }
+}

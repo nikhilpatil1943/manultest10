@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Signika:wght@400;700&display=swap');
+
+* , *::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  /* Colors */
+  --clr-primary:#F3F3F3 ;
+  --clr-secondary:hsla(174, 100%, 20%, 1);
+  --clr-accent-theme :hsla(120, 79%, 95%, 1);
+  --clr-accent-white :#fff;
+  --clr-accent-black :hsla(174, 99%, 7%, 1);
+
+  /* Fonts */
+  --ft-text-1 : 'Bebas Neue', cursive;
+  --ft-text-cm : 'Signika', sans-serif;
+
+  /* Background */
+  --bg-linear:linear-gradient(115.59deg, #00655B 0%, #0D2B59 98.54%);;
+}
+
+body{
+  font-family: var(--ft-text-cm);
+  background-color: var(--clr-primary);
+}

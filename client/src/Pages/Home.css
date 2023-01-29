@@ -1,0 +1,7 @@
+.Home--titles{
+    font-size: 2rem;
+    font-family: var(--ft-text-);
+    font-weight: 800;
+    color: var(--clr-accent-cm);
+    text-align: center;
+}
